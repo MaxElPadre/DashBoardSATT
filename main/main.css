@@ -5,16 +5,19 @@
     --sub-color:grey;
 
     /* Workstream colors*/
-    --done-color:green;
-    --onTime-color:blue;
-    --delayed-color:yellow;
-    --major-color:red;
+    --done-color:#7bd679;
+    --onTime-color:#333333;
+    --delayed-color:#ffd673;
+    --major-color:#e75f5f;
 
     /* Benefits colors */
     --objective-color:grey;
     --expected-color:black;
     --obtained-color:brown;
-    
+
+    /* Global overview */
+    --aware-color:#4f57bb;
+    --unware-color:#6873ff;
 }
 
 /* Sections */
@@ -92,6 +95,14 @@
 
 .elem-pills.expected,.elem-card.expected{
     background-color: var(--expected-color);
+}
+
+.elem-pills.aware,.elem-card.aware{
+    background-color: var(--aware-color);
+}
+
+.elem-pills.unware,.elem-card.unware{
+    background-color: var(--unware-color);
 }
 
 /* Elements */
