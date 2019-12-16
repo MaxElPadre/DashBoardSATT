@@ -1,0 +1,60 @@
+
+/* Sections */
+#workstream,
+#action,
+#benefits,
+#investments,
+#overview,
+#radar,
+#insights{
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.09);
+    background-color: #FFFFFF;
+    margin: 10px 0;
+}
+
+
+/* Elements */
+.elem-mainTitle{
+
+}
+
+.elem-listElem{
+
+}
+
+.elem-subTitle{
+
+}
+
+.elem-smallTitle{
+
+}
+
+.elem-boldTitle{
+
+}
+
+.elem-card{
+
+}
+
+.elem-card-title{
+
+}
+
+.elem-card-subTitle{
+
+}
+
+.elem-inputFilter{
+
+}
+
+.elem-horizontalCard{
+
+}
+
+.elem-logo{
+
+}
