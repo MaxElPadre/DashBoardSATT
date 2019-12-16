@@ -20,11 +20,71 @@
                     <div class="elem-mainTitle">
                         Spot initiatives progress
                     </div>
+                    <div class="elem-legendWithPuce">
+                        <div class="d-inline-block">
+                            <li class="elem-listElem px-2 done">Done</li>
+                        </div>
+                        <div class="d-inline-block">
+                            <li class="elem-listElem px-2 onTime">In progress - On time</li>
+                        </div>
+                        <div class="d-inline-block">
+                            <li class="elem-listElem px-2 delayed">In progress - Delayed</li>
+                        </div>
+                        <div class="d-inline-block">
+                            <li class="elem-listElem px-2 major">Major road block</li>
+                        </div>
+                    </div>
+
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="elem-subTitle">Direct procurement</div>
+                                    <div class="elem-smallTitle">36% done</div>
+                                </td>
+                                <td>
+                                    <div class="elem-pills d-inline-block done"></div>
+                                    <div class="elem-pills d-inline-block done"></div>
+                                    <div class="elem-pills d-inline-block onTime"></div>
+                                    <div class="elem-pills d-inline-block onTime"></div>
+                                    <div class="elem-pills d-inline-block delayed"></div>
+                                    <div class="elem-pills d-inline-block delayed"></div>
+                                    <div class="elem-pills d-inline-block major"></div>
+                                    <div class="elem-pills d-inline-block major"></div>
+                                    <div class="elem-pills d-inline-block major"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <div id="action">
                     <div class="elem-mainTitle">
                         Energy from waste
                     </div>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="elem-subTitle">Direct procurement</div>
+                                </td>
+                                <td>
+                                    <div class="d-inline-block">
+                                        <li class="elem-listElem px-2 done">Done</li>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="elem-subTitle">Direct procurement</div>
+                                </td>
+                                <td>
+                                    <div class="d-inline-block">
+                                        <li class="elem-listElem px-2 major">Major road block</li>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <div class="col-md-7 col-sm-12">
@@ -32,6 +92,17 @@
                 <div id="benefits">
                     <div class="elem-mainTitle">
                         Spot 2023 gross benefits (M€)
+                        <div class="elem-legendWithPuce">
+                            <div class="d-inline-block">
+                                <li class="elem-listElem px-2 objective">Done</li>
+                            </div>
+                            <div class="d-inline-block">
+                                <li class="elem-listElem px-2 expected">In progress - On time</li>
+                            </div>
+                            <div class="d-inline-block">
+                                <li class="elem-listElem px-2 obtained">In progress - Delayed</li>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="investments">
@@ -45,14 +116,20 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-12">
                         <div id="radar" class="col-md-12 col-sm-12">
                             <div class="elem-mainTitle">
                                 Radar
                             </div>
+                            <div>
+                                <select class="ml-50">
+                                    <option value="nothing"> -- WorkStream -- </option>
+                                </select>
+                                <canvas id="radarChart" height="150" width="150"></canvas>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-12">
                         <div id="insights" class="col-md-12 col-sm-12">
                             <div class="elem-mainTitle">
                                 Insights
@@ -63,6 +140,8 @@
             </div>
         </div>
     </div>
+    <script src="../public/chart.min.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,20 @@
+/* Main */
+:root {
+    /* Main colors */
+    --main-color:#06c;
+
+    /* Workstream colors*/
+    --done-color:green;
+    --onTime-color:blue;
+    --delayed-color:yellow;
+    --major-color:red;
+
+    /* Benefits colors */
+    --objective-color:grey;
+    --expected-color:black;
+    --obtained-color:brown;
+    
+}
 
 /* Sections */
 #workstream,
@@ -11,11 +28,67 @@
     box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.09);
     background-color: #FFFFFF;
     margin: 10px 0;
+    padding:10px;
+}
+
+/* Generic */
+.ml-50 {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.objective{
+    color: var(--objective-color)
+}
+
+.expected{
+    color: var(--expected-color)
+}
+
+.obtained{
+    color: var(--obtained-color)
+}
+
+.done{
+    color: var(--done-color);
+}
+
+.onTime{
+    color: var(--onTime-color);
+}
+
+.delayed{
+    color: var(--delayed-color);
+}
+
+.major{
+    color: var(--major-color);
+}
+
+.elem-pills.done{
+    background-color: var(--done-color);
+}
+
+.elem-pills.onTime{
+    background-color: var(--onTime-color);
+}
+
+.elem-pills.delayed{
+    background-color: var(--delayed-color);
+}
+
+.elem-pills.major{
+    background-color: var(--major-color);
 }
 
 
+
+
 /* Elements */
+
+
 .elem-mainTitle{
+    color: var(--main-color);
 
 }
 
@@ -29,6 +102,11 @@
 
 .elem-smallTitle{
 
+}
+.elem-pills{
+    width: 10px;
+    height: 30px;
+    border-radius: 10px;
 }
 
 .elem-boldTitle{
@@ -57,4 +135,8 @@
 
 .elem-logo{
 
+}
+
+.elem-legendWithPuce{
+    
 }
