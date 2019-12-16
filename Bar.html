@@ -1,0 +1,60 @@
+<canvas id="barChart" width="400" height="400"></canvas>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+<!-- <script type="text/javascript" src="./public/chart-bar-top-rounded.js"></script> -->
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        let barCanvar = document.getElementById("barChart");
+        initBarChart(barCanvar);
+    });
+
+    function initBarChart(barCanvar) {
+        let data = {
+            labels: ["2020", "2021", "2022", "2023", "TOTAL"],
+            datasets: [{
+                label: "Objective",
+                backgroundColor: "blue",
+                data: [3.65, 2.57, 2.43, 3.02, 6.54],
+                roundedBar: 50
+            }, {
+                label: "Expected",
+                backgroundColor: "red",
+                data: [2.87, 1.81, 1.78, 2.67, 5.70]
+            }, {
+                label: "Obtained",
+                backgroundColor: "green",
+                data: [1.98, 1.24, 1.55, 2.35, 3.62]
+            }]
+        };
+
+        let myBarChart = new Chart(barCanvar, {
+            type: 'bar',
+            data: data,
+            options: {
+                scaleShowLabels: false,
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            min: 0,
+                            display: false
+                        },
+                        gridLines: {
+                            display: false
+                        }
+                    }],
+                    xAxes: [{
+                        ticks: {
+                            min: 0,
+                        },
+                        gridLines: {
+                            display: false
+                        },
+                        categoryPercentage: 0.5,
+					    barPercentage: 0.2
+                    }]
+                }
+            }
+        });
+    }
+</script>
