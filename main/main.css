@@ -2,6 +2,7 @@
 :root {
     /* Main colors */
     --main-color:#06c;
+    --sub-color:grey;
 
     /* Workstream colors*/
     --done-color:green;
@@ -65,27 +66,35 @@
     color: var(--major-color);
 }
 
-.elem-pills.done{
+.elem-pills.done,.elem-card.done{
     background-color: var(--done-color);
 }
 
-.elem-pills.onTime{
+.elem-pills.onTime,.elem-card.onTime{
     background-color: var(--onTime-color);
 }
 
-.elem-pills.delayed{
+.elem-pills.delayed,.elem-card.delayed{
     background-color: var(--delayed-color);
 }
 
-.elem-pills.major{
+.elem-pills.major,.elem-card.major{
     background-color: var(--major-color);
 }
 
+.elem-pills.objective,.elem-card.objective{
+    background-color: var(--objective-color);
+}
 
+.elem-pills.obtained,.elem-card.obtained{
+    background-color: var(--obtained-color);
+}
 
+.elem-pills.expected,.elem-card.expected{
+    background-color: var(--expected-color);
+}
 
 /* Elements */
-
 
 .elem-mainTitle{
     color: var(--main-color);
@@ -97,24 +106,58 @@
 }
 
 .elem-subTitle{
-
+    color:var(--main-color);
+    font-size: 14px;
 }
 
 .elem-smallTitle{
-
+    color:var(--sub-color);
+    font-size: 12px;
 }
 .elem-pills{
     width: 10px;
     height: 30px;
     border-radius: 10px;
+    position:relative;
+    background-color:blue;
+    cursor:pointer;
+}
+
+.elem-pills:hover:after,
+.elem-pills:focus:after {
+  content: attr(aria-label);  /* on affiche aria-label */
+  position: absolute;
+  top: -2.4em;
+  left: 50%;
+	transform: translateX(-50%); /* on centre horizontalement  */
+  z-index: 1; /* pour s'afficher au dessus des éléments en position relative */
+  white-space: nowrap;  /* on interdit le retour à la ligne*/
+  padding: 5px 14px;
+  background: #413219;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 1rem;
 }
 
 .elem-boldTitle{
-
 }
 
 .elem-card{
+    display:inline-block;
+    color:#FFFFFF;
+    border-radius:5px;
+    padding:10px;
+    margin:5px 0px 0px;
+    text-align:center;
+    font-weight: bold;
+    min-width: 90px;
+}
 
+.elem-vertical-separator{
+    border-left: 1px solid black;
+    height: 30px;
+    display: inline-flex;
+    margin: 0px 10px;
 }
 
 .elem-card-title{
