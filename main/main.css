@@ -41,6 +41,10 @@
     transform: translateX(-50%);
 }
 
+.table-layout-fixed{
+    table-layout: fixed;
+}
+
 .objective{
     color: var(--objective-color)
 }
@@ -107,9 +111,14 @@
 
 /* Elements */
 
+.elem-action{
+
+}
+
 .elem-mainTitle{
     color: var(--main-color);
-
+    font-size: 18px;
+    padding: 10px;
 }
 
 .elem-listElem{
@@ -171,6 +180,10 @@
     margin: 0px 10px;
 }
 
+.elem-horizontal-separator{
+    
+}
+
 .elem-card-title{
 
 }
@@ -187,10 +200,49 @@
 
 }
 
+.elem-horizontalCard-body{
+
+}
+
+.elem-circlePercentage{
+    text-align: -webkit-center;
+}
+
+.elem-circlePercentage-header{
+    color:var(--sub-color) !important;
+    font-size:12px;
+}
+
+.elem-circlePercentage-body{
+    color:var(--main-color) !important;
+}
+
+.elem-circlePercentage-footer{
+    color:var(--main-color);
+    font-size:12px;
+    font-weight: bold;
+}
+
 .elem-logo{
 
 }
 
 .elem-legendWithPuce{
     
+}
+
+
+/* Sheet */
+
+.c100:hover>span {
+    width: 5em !important;
+    line-height: 5em !important;
+    font-size: .2em !important;
+}
+
+.c100:after{
+    top: .04em !important;
+    left: .04em !important;
+    width: .92em !important;
+    height: .92em !important;
 }

@@ -1,0 +1,14 @@
+la partie de droite statique
+
+chaque barette une action : au click ouvre l'action (nom de l'action au survol) (peut fonctionner que pour un seul) ouvre
+
+Filtre par workstream
+
+/ho/Repo  
+- 
+
+Une action (table data stocke toute la data (objectives, obtain , ) 
+
+
+Partie Spot 2023 gross benefits (M€)
+Filtre par workstream
